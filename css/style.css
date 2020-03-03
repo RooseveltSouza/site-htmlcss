@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: lato, sans-serif;
+}
+
+header.main-header {
+  display: flex;
+  height: 87px;
+  background-color: #fff;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header.main-header img {
+  width: 295;
+  height: 58px;
+}
+
+button.menu-toggle {
+  display: none;
+  float: right;
+  background-color: #555;
+  color: #fff;
+  border: solid 1px #777;
+  border-radius: 7px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+header.main-header nav.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+header.main-header nav.menu ul li {
+  margin: 0 10px;
+}
+
+header.main-header nav.menu a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #333;
+  transition: color 0.6s;
+}
+
+header.main-header nav.menu a:hover {
+  color: #346de9;
+}
+
+header.main-header nav.menu ul li.icon a {
+  font-size: 18px;
+}
+
+div.banner {
+  background: url('/img/foto-banner-site-branco.png');
+  background-size: cover;
+  width: 100%;
+  height: 355px;
+  background-color: #333;
+}
+
+div.banner div.bg-color {
+  background-color: rgba(0, 0, 0, 0.61);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.banner div.text h2 {
+  font-size: 32px;
+  color: #fff;
+  font-style: italic;
+  font-family: Roboto, sans-serif;
+  line-height: 40px;
+}
+
+div.component {
+  height: 186px;
+  background-color: #191a1d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+div.component div.ebook {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+div.component div.ebook img {
+  margin-top: -35px;
+}
+
+div.ebook div.ebook-text {
+  width: 50%;
+  margin-left: 20px;
+}
+
+div.ebook div.ebook-text span {
+  font-size: 18px;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+}
+
+div.ebook div.ebook-text p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+}
+
+div.component div.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+  height: 100%;
+}
+
+div.component div.form h3 {
+  flex-wrap: wrap;
+  font-size: 16px;
+  color: #fff;
+}
+
+div.component div.form div {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+div.component div.form input {
+  height: 44px;
+  border: 0;
+  border-radius: 4px;
+  padding: 0 20px;
+  width: 65%;
+}
+
+div.component div.form button {
+  display: inline-block;
+  height: 44px;
+  background: #00a4ff;
+  color: #fff;
+  border: 0;
+  padding: 14px 15px;
+  border-radius: 4px;
+  margin-left: 5px;
+  font-weight: bold;
+  cursor: pointer;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+section.person-data {
+  display: flex;
+  flex-direction: column;
+  height: 309px;
+}
+
+section.person-data h5 {
+  text-align: center;
+  color: rgb(68, 75, 86);
+  font-size: 30px;
+  font-weight: 100;
+  margin: 35px 0;
+}
+
+section.person-data div.container-person {
+  display: flex;
+  /* width: 100%; */
+  margin: 20px 50px;
+}
+
+section.person-data div.container-person img {
+  width: 121px;
+  height: 121px;
+  border-radius: 50%;
+  margin-right: 35px;
+}
+
+section.person-data div.container-person p {
+  color: #6d6d6d;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+div.facebook {
+  height: 134px;
+  /* width: 100%; */
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.facebook div {
+  display: flex;
+  align-items: flex-end;
+}
+
+div.facebook h2 {
+  font-weight: 100;
+  font-size: 24px;
+  color: #3f464b;
+  margin-bottom: 10px;
+}
+
+div.facebook div a {
+  text-decoration: none;
+  font-size: 12px;
+  background-color: #346de9;
+  padding: 3px 7px;
+  border-radius: 2px;
+  color: #fff;
+  margin: 3px;
+}
+
+div.facebook div span {
+  width: 250px;
+  display: block;
+  font-size: 11px;
+  text-align: left;
+  margin-left: 10px;
+  color: #3f464b;
+}
+
+div.youtube {
+  height: 650px;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.youtube h2 {
+  font-size: 30px;
+  color: #333;
+  margin: 40px 0;
+}
+
+div.youtube div.video {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+div.youtube div.video iframe {
+  width: 600px;
+  height: 400px;
+}
+
+div.youtube div.video div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 10px;
+}
+div.youtube div.video div iframe {
+  width: 300px;
+  height: 190px;
+}
+
+footer.main-footer {
+  /* width: 100%; */
+  height: 195px;
+  background-color: #202427;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer.main-footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer.main-footer div ul {
+  display: flex;
+  list-style: none;
+}
+
+footer.main-footer div ul li {
+  margin: 0 10px;
+}
+
+footer.main-footer div ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  transition: all 0.4s;
+}
+
+footer.main-footer div ul a:hover {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+footer.main-footer div.copyright small {
+  color: #6a7882;
+}
+
+@media (max-width: 1410px) {
+  div.component div.form div {
+    display: flex;
+  }
+
+  div.component div.form input {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 60%;
+  }
+  div.component div.form button {
+    width: 30%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  header.main-header {
+    display: flex;
+  }
+  header.main-header nav.menu {
+    display: none;
+  }
+  button.menu-toggle {
+    display: block;
+  }
+  div.banner div.text h2 {
+    text-align: center;
+  }
+  div.component {
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.component div.ebook {
+    align-items: center;
+  }
+
+  div.component div.form {
+    width: 80%;
+  }
+
+  div.component div.form div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  div.youtube h2 {
+    text-align: center;
+  }
+  div.youtube div.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  div.youtube div.video iframe {
+    width: 92%;
+    height: 300px;
+  }
+  div.youtube div.video div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  div.youtube div.video div iframe {
+    margin-left: -10px;
+    width: 44%;
+    height: 145px;
+  }
+}
+
+@media (max-width: 700px) {
+  section.person-data {
+    height: 500px;
+  }
+  section.person-data div.container-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.person-data div.container-person img {
+    margin-bottom: 10px;
+  }
+  div.facebook {
+    height: 160px;
+  }
+  div.facebook h2 {
+    text-align: center;
+  }
+
+  footer.main-footer div ul {
+    display: none;
+  }
+}
+
+@media (max-width: 670px) {
+  div.component {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+}
